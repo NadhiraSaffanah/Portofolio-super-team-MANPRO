@@ -1,31 +1,146 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Porto</title>
-     <style>
-        * {
-            font-family:system-ui, sans-serif;
-        }
+<html><head>
+        <meta charset="UTF-8">
+        <title>Porto</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family:system-ui, sans-serif;
+                text-decoration: none;
+            }
+            
+            body{
+                height: 100vw;
+            }
+            
+            nav{
+                height: 50px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: black;
+                padding-top: 5px;
+                padding: 10px;
+            }
+            
+            nav a{
+                color: aliceblue;
+                font-size: 20px;
+                font-weight: bold;
+            }
         
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+            
+            main{
+                margin-top: 10px;
+                margin-right: 80px;
+                margin-left: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: left;
+                flex-direction: column;
+            }
+            
+            main #tentangsaya{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            main #tentangsaya h1{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }  
+            
+            main #ketrampilan{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
 
-        img {
-            width: 100px;
-            height: 100px;;
-        }
+            .bahasaPemr{
+                display: flex;
+                gap: 10px;
+                
+            }
+
+            #keahlian{
+                margin-top: 20px;
+            }
+            
+            #keahlian h1{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            
+            .bahasaPemr div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10px;
+                width: 70px;
+                padding: 8px;
+                border-radius: 10px;
+                border: 1px solid black;
+            }
+            
+            #organisasi{
+                margin-top: 20px;
+            }
+
+            #organisasi h1{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            ul{
+                margin-left: 30px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 20px;
+                margin-bottom: 15px;
+            }
     </style>
 </head>
 <body>
-    <h1>Felix Nathanael</h1>
-    <img src="Foto.jpg" alt="">
-    <p>Nama : Felix Nathanael</p>
-    <p>Hobi : Makan Tidur</p>
-    <p>Keahlian : Apa aja yang bisa dikerjain</p>
-</body>
-</html>
+    <nav>
+        <a href="#tentangsaya">Tentang saya</a>
+        <a href="#keahlian">Ketrampilan</a>
+        <a href="#organisasi">Organisasi</a>
+    </nav>
+    <main>
+        <div id="tentangsaya">
+            <h1>Tentang Saya</h1>
+            <img src="Foto.jpg" alt="">
+            <p>Nama : Felix Nathanael</p>
+            <p>Umur : 20</p>
+            <p>Hobi : Makan, Tidur, Nonton, Ngobrol, dan Olahraga</p>
+            <p>Tempat Tanggal Lahir : Bandung,  2 Juni 2005</p>
+            <p>Jurusan : Informatika</p>
+            <p>Angkatan :  2023</p>
+        </div>
+        <div id="keahlian">
+            <h1>Keahlian : </h1>
+            <div class="bahasaPemr">
+                <div>java</div>
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>Phyton</div>
+                <div>SQL</div>
+                <div>Golang</div>
+            </div>
+        </div>
+        <div id="organisasi">
+            <h1>Organisasi : </h1>
+            <ul>
+                <li>HMPSIF 2023-2024</li>
+                <li>HMPSIF 2024-2025</li>
+            </ul>
+        </div>
+    </main>
+
+</body></html>
